@@ -1,0 +1,155 @@
+<link rel="Stylesheet" type="text/css" href="/skins/berrien_cte/css/carousel.css" />
+
+<script type="text/javascript" src="/skins/berrien_cte/js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="/skins/berrien_cte/js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="/skins/berrien_cte/js/jquery.carousel-1.1.js"></script>
+    <script type="text/javascript" src="/skins/berrien_cte/js/cufon-yui.js"></script>
+    <script type="text/javascript" src="/skins/berrien_cte/js/Proxima_Nova_Cn_Rg_700.font.js"></script>     
+    
+<script type="text/javascript">
+        $(document).ready(function(){
+            Cufon.replace('h1');
+            $('.carousel').carousel({hAlign:'center', vAlign:'center', hMargin:0.2, slidesPerScroll:7});
+            
+    $('.thumbnails li img').hover(function(){
+      
+	 var $gallery = $(this).parents('.section');
+	  $('.bg-image',$gallery).show();
+	     $('.bg-image',$gallery).attr('src',$(this).attr('src').replace('thumbs/', ''));
+	});
+	var imgSwap = [];
+	 $('.thumbnails li img').each(function(){
+		imgUrl = this.src.replace('thumbs/', '');
+		imgSwap.push(imgUrl);
+	});
+	$(imgSwap).preload();
+	
+	  });
+        $.fn.preload = function() {
+    this.each(function(){
+        $('<img/>')[0].src = this;
+    });
+}
+    </script>
+    
+<div class="banner-holder">
+<div class="carousel"> <!-- BEGIN CAROUSEL -->
+    
+    <div class="slides"> <!-- BEGIN SLIDES -->
+    
+        
+          <div class="section">  
+            <div class="main"><img src="/skins/berrien_cte/img/carousel/health-science.png"></div>  
+            <img class="bg-image" src="/skins/berrien_cte/img/carousel/health-science.png"/> 
+                    
+        	 <div class="description">
+        	 <div class="thumbnails">
+        	    <ul>
+        	        <a href="/pathways/healthscience/programs/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/healthscience-programs.png"><h1>Programs</h1></li> 
+        	        <a href="/pathways/healthscience/college-credits/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/healthscience-cc.png"><h1>College Credit</h1></li> 
+        	        <a href="/pathways/healthscience/resources/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/healthscience-resources.png"><h1>Resources</h1></li></a> 
+        	        <a href="/studentedp/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/healthscience-enroll.png"><h1>Planning</h1></li></a> 
+        	        <a href="/pathways/healthscience/mi-works/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/healthscience-faq.png"><h1>MI Works!</h1></li></a> 
+        	   </ul>
+        	   </div>
+        	</div>
+          </div>
+          
+           <div class="section">  
+            <div class="main"><img src="/skins/berrien_cte/img/carousel/human-services.png"></div> 
+             <img class="bg-image" src="/skins/berrien_cte/img/carousel/human-services.png"/> 
+            
+        	  <div class="description">
+        	 <div class="thumbnails">
+        	   <ul>
+        	         <a href="/pathways/humanservices/programs/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/humanservices-programs.png"><h1>Programs</h1></li></a>
+        	         <a href="/pathways/humanservices/college-credits/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/humanservices-cc.png"><h1>College Credit</h1></li></a>
+        	         <a href="/pathways/humanservices/resources/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/humanservices-resources.png"><h1>Resources</h1></li></a>
+        	         <a href="/studentedp/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/humanservices-enroll.png"><h1>Planning</h1></li></a>
+        	         <a href="/pathways/humanservices/mi-works/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/humanservices-faq.png"><h1>MI Works!</h1></li></a>
+        	   </ul>
+        	   </div>
+        	</div>
+          </div>
+          
+          <div class="section">   
+           <div class="main"><img src="/skins/berrien_cte/img/carousel/agriscience.png"></div> 
+        	 <img class="bg-image" src="/skins/berrien_cte/img/carousel/agriscience.png"/> 
+             <div class="description">
+        	 <div class="thumbnails">
+        	   <ul>
+        	         <a href="/pathways/agriscienceandnaturalresources/programs/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/agriscience-programs.png"><h1>Programs</h1></li></a>
+        	         <a href="/pathways/agriscienceandnaturalresources/college-credits/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/agriscience-cc.png"><h1>College Credit</h1></li></a>
+        	         <a href="/pathways/agriscienceandnaturalresources/resources/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/agriscience-resources.png"><h1>Resources</h1></li></a>
+        	         <a href="/studentedp/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/agriscience-enroll.png"><h1>Planning</h1></li></a>
+        	         <a href="/pathways/agriscienceandnaturalresources/mi-works/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/agriscience-faq.png"><h1>MI Works!</h1></li></a>
+        	   </ul>
+        	   </div>
+        	</div>
+          </div>
+          
+          <div class="section">   
+           <div class="main"><img src="/skins/berrien_cte/img/carousel/arts.png"></div>
+             <img class="bg-image" src="/skins/berrien_cte/img/carousel/arts.png"/>
+              <div class="description">
+        	 <div class="thumbnails">
+        	   <ul>
+        	         <a href="/pathways/artscommunication/programs/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/arts-programs.png"><h1>Programs</h1></li></a>
+        	         <a href="/pathways/artscommunication/college-credits/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/arts-cc.png"><h1>College Credit</h1></li></a>
+        	         <a href="/pathways/artscommunication/resources/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/arts-resources.png"><h1>Resources</h1></li></a>
+        	         <a href="/studentedp/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/arts-enroll.png"><h1>Planning</h1></li></a>
+        	         <a href="/pathways/artscommunication/mi-works/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/arts-faq.png"><h1>MI Works!</h1></li></a>
+        	   </ul>
+        	   </div>
+        	</div>
+          </div>
+          <div class="section">   
+              <div class="main"><img src="/skins/berrien_cte/img/carousel/engineering.png"></div> 
+        	 <img class="bg-image" src="/skins/berrien_cte/img/carousel/engineering.png"/> 
+             <div class="description">
+        	 <div class="thumbnails">
+        	   <ul>
+        	         <a href="/pathways/engineeringmanufacturingindustrialtechnology/programs/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/engineering-programs.png"><h1>Programs</h1></li></a>
+        	         <a href="/pathways/engineeringmanufacturingindustrialtechnology/college-credits/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/engineering-cc.png"><h1>College Credit</h1></li></a>
+        	         <a href="/pathways/engineeringmanufacturingindustrialtechnology/resources/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/engineering-resources.png"><h1>Resources</h1></li></a>
+        	         <a href="/studentedp/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/engineering-enroll.png"><h1>Planning</h1></li></a>
+        	         <a href="/pathways/engineeringmanufacturingindustrialtechnology/mi-works/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/engineering-faq.png"><h1>MI Works!</h1></li></a>
+        	   </ul>
+        	   </div>
+        	</div>
+          </div>
+          <div class="section">   
+              <div class="main"><img src="/skins/berrien_cte/img/carousel/business.png"></div> 
+        	  <img class="bg-image" src="/skins/berrien_cte/img/carousel/business.png"/>
+             <div class="description">
+        	 <div class="thumbnails">
+        	   <ul>
+        	         <a href="/pathways/businessmanagementmarketingtechnology/programs/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/business-programs.png"><h1>Programs</h1></li></a>
+        	         <a href="/pathways/businessmanagementmarketingtechnology/college-credits/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/business-cc.png"><h1>College Credit</h1></li></a>
+        	         <a href="/pathways/businessmanagementmarketingtechnology/resources/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/business-resources.png"><h1>Resources</h1></li></a>
+        	         <a href="/studentedp/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/business-enroll.png"><h1>Planning</h1></li></a>
+        	         <a href="/pathways/businessmanagementmarketingtechnology/mi-works/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/business-faq.png"><h1>MI Works!</h1></li></a>
+        	   </ul>
+        	   </div>
+        	</div>
+          </div>
+          <div class="section">   
+              <div class="main"><img src="/skins/berrien_cte/img/carousel/career-planning.png"></div> 
+        	 <img class="bg-image" src="/skins/berrien_cte/img/carousel/career-planning.png"/> 
+             <div class="description">
+        	 <div class="thumbnails">
+        	   <ul style="margin-top:-10px">
+        	         <a href="/studentedp/career-cruising/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/career-programs.png"><h1>Career Cruising</h1></li></a>
+        	         <a href="/studentedp/non-traditional-careers/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/career-cc.png"><h1>Non Traditional Careers</h1></li></a>
+        	         <a href="/studentedp/resources/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/career-resources.png"><h1>Resources</h1></li></a>
+        	         <a href="/studentedp/occupational-outlook/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/career-enroll.png"><h1>Occupational Outlook</h1></li></a>
+        	         <a href="/studentedp/career-exploration/"><li><img src="/skins/berrien_cte/img/carousel/thumbs/career-faq.png"><h1>Career Exploration</h1></li></a>
+        	   </ul>
+        	   </div>
+        	</div>
+          </div>
+                  
+    </div> <!-- END SLIDES -->
+        
+   </div> <!-- END CAROUSEL -->
+</div> <!-- END BannerHolder -->
