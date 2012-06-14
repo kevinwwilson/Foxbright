@@ -1,8 +1,9 @@
 <?php
-//zendesk authentication
+//zendesk config
 $zendesk_user = 'username';  
 $zendesk_pass = 'password';  
 $zendesk_subdomain = 'subdomain'; //look in your zendesk address [subdomain].zendesk.com.  Don't use your fancy http://support.mycompany.com here.
+$zendesk_mantis = 123456; //this is the zendesk custom field that can hold your mantis issue ID
 
 //Mantis config
 $mantis_user = 'username';
@@ -72,7 +73,7 @@ $ticketInfo = json_decode($result);
     $fields = array (
         'ticket' =>array(
             'fields'=>array(
-                'id'=>147688,
+                'id'=>$zendesk_mantis,
                 'value'=> $return
             )
         )
