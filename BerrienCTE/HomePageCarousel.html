@@ -1,37 +1,45 @@
 <link rel="Stylesheet" type="text/css" href="/skins/berrien_cte/css/carousel.css" />
 
-<script type="text/javascript" src="/skins/berrien_cte/js/jquery-1.4.4.min.js"></script>
     <script type="text/javascript" src="/skins/berrien_cte/js/jquery.mousewheel.min.js"></script>
     <script type="text/javascript" src="/skins/berrien_cte/js/jquery.carousel-1.1.js"></script>
     <script type="text/javascript" src="/skins/berrien_cte/js/cufon-yui.js"></script>
     <script type="text/javascript" src="/skins/berrien_cte/js/Proxima_Nova_Cn_Rg_700.font.js"></script>     
-    
+
+<script>
+	jQuery(window).load(function() {
+	jQuery('#loading-image').hide();
+	jQuery('.slides').show();
+	});
+</script>
+	
 <script type="text/javascript">
-        $(document).ready(function(){
+        jQuery(document).ready(function(){
             Cufon.replace('h1');
-            $('.carousel').carousel({hAlign:'center', vAlign:'center', hMargin:0.2, slidesPerScroll:7});
+            jQuery('.carousel').carousel({hAlign:'center', vAlign:'center', hMargin:0.2, slidesPerScroll:7});
             
-    $('.thumbnails li img').hover(function(){
+    jQuery('.thumbnails li img').hover(function(){
       
 	 var $gallery = $(this).parents('.section');
-	  $('.bg-image',$gallery).show();
-	     $('.bg-image',$gallery).attr('src',$(this).attr('src').replace('thumbs/', ''));
+	  jQuery('.bg-image',$gallery).show();
+	     jQuery('.bg-image',$gallery).attr('src',jQuery(this).attr('src').replace('thumbs/', ''));
 	});
 	var imgSwap = [];
-	 $('.thumbnails li img').each(function(){
+	 jQuery('.thumbnails li img').each(function(){
 		imgUrl = this.src.replace('thumbs/', '');
 		imgSwap.push(imgUrl);
 	});
-	$(imgSwap).preload();
+	jQuery(imgSwap).preload();
 	
 	  });
-        $.fn.preload = function() {
+        jQuery.fn.preload = function() {
     this.each(function(){
-        $('<img/>')[0].src = this;
+        jQuery('<img/>')[0].src = this;
     });
 }
     </script>
-    
+<div id="loading-image">
+<img src="/skins/berrien_cte/img/carousel/loader.gif" alt="Loading..." />
+</div>    
 <div class="banner-holder">
 <div class="carousel"> <!-- BEGIN CAROUSEL -->
     
